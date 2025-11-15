@@ -130,6 +130,13 @@ A comprehensive collection of essential software resources for NI core developme
   <tr>
     <td align="center" colspan="5"><b>🔧 Utilities</b></td>
   </tr>
+      <tr>
+    <td align="center"><b>Git</b></td>
+    <td align="center">2.51.2</td>
+    <td align="center"><a href="https://git-scm.com/install/windows">🔗</a></td>
+    <td align="center"><a href="https://github.com/git-for-windows/git/releases/download/v2.51.2.windows.1/Git-2.51.2-64-bit.exe">📥</a></td>
+    <td align="center">N/A</td>
+  </tr>
   <tr>
     <td align="center"><b>FRC Radio Configuration</b></td>
     <td align="center">25.0.0</td>
@@ -146,7 +153,6 @@ A comprehensive collection of essential software resources for NI core developme
   </tr>
 </tbody>
 </table>
-
 
 ## 📌 Legend
 
