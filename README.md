@@ -174,6 +174,5 @@ A comprehensive collection of essential software resources for NI core developme
 ## 📌 Legend
 
 - 🔗 - Official Page Link
-- 🍎 - Apple Download Link
-- 📥 - Windows Download Link
-- 📦 - vendordeps Configuration File
+- 📥 - Download Link
+- 📦 - Java Vendordeps Configuration File
