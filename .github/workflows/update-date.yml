@@ -1,0 +1,24 @@
+name: Update Shield Badge Date
+
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Update Date Shield
+      run: |
+        NEW_DATE=$(date +%Y.%m.%d)
+        sed -i "s|\[!\[Date\](https://img.shields.io/badge/Date-[0-9]\{4\}\.[0-9]\{2\}\.[0-9]\{2\}-blue\?style=for-the-badge)\]|\[![Date](https://img.shields.io/badge/Date-${NEW_DATE}-blue?style=for-the-badge)\]|g" README.md
+    
+    - name: Auto Commit
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "docs: update date to $(date +'%Y.%m.%d')"
+        file_pattern: README.md
